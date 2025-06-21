@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .keep{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #ab{
+            margin-left: 40px;
+        }
+        input:invalid {
+             border: 1px solid red;
+        }
+
+        input:valid {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h3>Sign up</h3>
+    <br>
+<div style="width: 25%; margin: auto;">
+    <div class="keep">
+        <label for="First-name">First name :</label>
+        <input type="text" placeholder="Enter your first name" required minlength="3">
+    </div>
+    
+    <br>
+    <div class="keep">
+        <label for="Last-name">Last-name :</label>
+        <input type="text" placeholder="Enter your last name" required minlength="3">
+    </div>
+    
+    <br>
+    <div class="keep">
+        <label for="email">Email :</label>
+        <input type="email" placeholder="Enter your email" required minlength="3">
+    </div>
+    
+    <br>
+    <div class="keep">
+        <label for="password">Password :</label>
+        <input type="password" placeholder="Enter your password" required>
+    </div>
+    
+    <br>
+    <div class="keep">
+        <label for="confirm password">Confirm password :</label>
+        <input type="password" placeholder="Enter confirm password" required>
+    </div>
+    
+    <br>
+    <div class="keep">
+        <label for="age">Age :</label>
+        <input type="number" placeholder="Age" required min="0" max="150">
+    </div>
+
+    
+    <br>
+    <div class="keep">
+        <label for="gender">Gender :</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
+    </div>
+    <br>
+    <div class="form-check" id="ab">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Agree to our <a href="#">terms and conditions</a>
+        </label>
+      </div>
+      <br>
+      <div>
+        <input class="btn btn-outline-primary" type="submit" value="Sign up">
+    </div>
+</div>
+    
+</body>
+</html>
